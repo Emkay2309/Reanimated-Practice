@@ -16,12 +16,18 @@ import {
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from './src/navigation/AppNavigator';
+import MainContainer from './src/components/Containers/MainContainer';
 
 
 function App(): React.JSX.Element {
   return (
     <NavigationContainer>
+
       <AppNavigator />
+      
+      {/* <MainContainer>
+        
+      </MainContainer> */}
     </NavigationContainer>
   );
 }

@@ -4,20 +4,29 @@ import DetailScreen from '../screens/DetailScreen'
 import { SlideFromRightIOS } from '@react-navigation/stack/lib/typescript/src/TransitionConfigs/TransitionPresets';
 import { Data } from '../data/data';
 import PhoneScreen from '../screens/CallScreen';
+import DrawerNavigator from './DrawerNavigator';
+import CartScreen from '../screens/CartScreen';
+import CartComponent from '../components/CartComponent';
 
 export type RootStackParamList = {
     Home : undefined,
     Detail : {item : Data},
-    Phone : undefined
+    Phone : undefined,
+    Draw : undefined,
+    Cart : undefined,
+    CartComp : undefined,
 }
 
 const AppNavigator = () => {
     const Stack = createStackNavigator<RootStackParamList>();
     return (
-        <Stack.Navigator>
+        <Stack.Navigator >
+            <Stack.Screen name='Draw' component={DrawerNavigator} options={{headerShown:false , }}/>
             <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false , animationEnabled : true }}  />
             <Stack.Screen name="Detail" component={DetailScreen}  options={{headerShown:false , }}  />
             <Stack.Screen name='Phone' component={PhoneScreen} />
+            <Stack.Screen name='Cart' component={CartScreen} />
+            <Stack.Screen name='CartComp' component={CartComponent} />
         </Stack.Navigator>
     )
 }
