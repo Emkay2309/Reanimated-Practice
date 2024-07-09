@@ -5,7 +5,7 @@ import FontAwesome6 from 'react-native-vector-icons/FontAwesome6'
 const CartComponent = () => {
     return (
         <View style={styles.container}>  
-            <FontAwesome6 name="shopping-cart" color={'lightblue'} />
+            <FontAwesome6 name="cart-shopping" color={'black'}  size={50}/>
         </View>
     )
 }

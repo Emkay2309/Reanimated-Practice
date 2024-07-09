@@ -1,5 +1,8 @@
 import { StyleSheet, View } from "react-native"
 import Feather from 'react-native-vector-icons/Feather'
+import SmallText from "../../components/Text/SmallText"
+import RegularText from "../../components/Text/RegularText"
+import LargeText from "../../components/Text/LargeText"
 
 
 const PhoneScreen = ()=> {
@@ -7,6 +10,11 @@ const PhoneScreen = ()=> {
         <View style={styles.container}>
             <View style={[styles.dot , styles.center]}>
                 <Feather name="phone-call" size={42} color={'#FFF'} />
+            </View>
+            <View>
+                <SmallText>Hello</SmallText>
+                <RegularText>Hello</RegularText>
+                <LargeText>Hello</LargeText>
             </View>
         </View>
     )

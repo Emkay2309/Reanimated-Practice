@@ -1,4 +1,4 @@
-import { View, SafeAreaView, ScrollView, Text } from "react-native"
+import {  SafeAreaView, ScrollView, Text } from "react-native"
 
 
 const CartScreen = () => {

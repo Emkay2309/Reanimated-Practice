@@ -12,6 +12,17 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#323232',
         marginTop : 10
+    },
+    header : {
+        flexDirection : 'column',
+        height : 50,
+        marginTop : 100
+    },
+    cartContainer : {
+        height : 100,
+        position : 'absolute',
+        marginLeft : '80%'
+    
     }
 
 })
