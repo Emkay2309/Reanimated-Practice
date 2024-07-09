@@ -1,16 +1,10 @@
 import {StyleSheet, Text, View, useWindowDimensions} from 'react-native';
 import React from 'react';
 import Animated, {FadeIn, FadeInDown} from 'react-native-reanimated';
-import {RouteProp} from '@react-navigation/native';
-import { RootStackParamList } from '../../navigation/AppNavigator';
 import Header from '../../components/Header';
 import Button from '../../components/Button';
-
-type DetailsScreenRouteProp = RouteProp<RootStackParamList, 'Detail'>;
-
-type Props = {
-  route: DetailsScreenRouteProp;
-};
+import styles from './style'
+import { Props } from './types';
 
 const DetailScreen = ({route}: Props) => {
   const {item} = route.params;
@@ -47,41 +41,3 @@ const DetailScreen = ({route}: Props) => {
 
 export default DetailScreen;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  textContainer: {
-    position: 'absolute',
-    backgroundColor: 'rgba(0, 0, 0, 0.6)',
-    bottom: 10,
-    left: 10,
-    right: 10,
-    padding: 16,
-    borderRadius: 30,
-  },
-  textName: {
-    color: 'white',
-    fontSize: 32,
-    fontWeight: 'bold',
-  },
-  textLocation: {
-    color: 'white',
-    fontSize: 16,
-  },
-  textAbout: {
-    color: '#323232',
-    fontSize: 28,
-    fontWeight: 'bold',
-    margin: 10,
-  },
-  text: {
-    color: '#323232',
-    fontSize: 16,
-    marginHorizontal: 10,
-    textAlign: 'justify',
-  },
-});

@@ -4,10 +4,10 @@ import { View } from "react-native"
 import { FlatList } from "react-native-gesture-handler";
 import data from "../../data/data";
 import RenderItem from "../../components/RenderItem";
+import styles from './styles'
 
 
-
-const HomeScreen = ({ navigation }: any) => {
+const HomeScreen = ({ navigation } : any) => {
     const handleNavigation = () => {
         navigation.navigate('Detail');
     }
@@ -24,17 +24,3 @@ const HomeScreen = ({ navigation }: any) => {
 }
 export default HomeScreen;
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: 'lightgrey'
-    },
-    text: {
-        fontSize: 34,
-        textAlign: 'center',
-        fontWeight: 'bold',
-        color: '#323232',
-        marginTop : 10
-    }
-
-})

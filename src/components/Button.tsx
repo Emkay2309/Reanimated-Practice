@@ -21,6 +21,7 @@ const Button = () => {
       <Text style={styles.text}>Booking Now</Text>
     </AnimatedPressable>
   );
+  
 };
 
 export default Button;
