@@ -3,11 +3,11 @@ import { StyleSheet, View } from 'react-native';
 import ToggleButton from '../../components/Toggle/ToggleButton';
 import { NavigationProp } from '@react-navigation/native';
 
-interface LoginScreenProps {
+interface SignupScreenProps {
   navigation: NavigationProp<any>;
 }
 
-const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
+const SignupScreen: React.FC<SignupScreenProps> = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <ToggleButton navigation={navigation} />
@@ -15,7 +15,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
   );
 };
 
-export default LoginScreen;
+export default SignupScreen;
 
 const styles = StyleSheet.create({
   container: {

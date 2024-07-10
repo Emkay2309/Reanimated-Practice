@@ -7,6 +7,8 @@ import PhoneScreen from '../screens/CallScreen';
 import DrawerNavigator from './DrawerNavigator';
 import CartScreen from '../screens/CartScreen';
 import CartComponent from '../components/CartComponent';
+import LoginScreen from '../screens/LoginScreen';
+import SignupScreen from '../screens/SignupScreen';
 
 export type RootStackParamList = {
     Home : undefined,
@@ -15,12 +17,16 @@ export type RootStackParamList = {
     Draw : undefined,
     Cart : undefined,
     CartComp : undefined,
+    Login : undefined;
+    Signup : undefined
 }
 
 const AppNavigator = () => {
     const Stack = createStackNavigator<RootStackParamList>();
     return (
         <Stack.Navigator >
+            <Stack.Screen name='Login' component={LoginScreen} />
+            <Stack.Screen name='Signup' component={SignupScreen} />
             <Stack.Screen name='Draw' component={DrawerNavigator} options={{headerShown:false , }}/>
             <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false , animationEnabled : true }}  />
             <Stack.Screen name="Detail" component={DetailScreen}  options={{headerShown:false , }}  />
