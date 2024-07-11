@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components/native";
 import RegularText from "../Text/RegularText";
-import { colors } from "../../utils/colors";
+import { colors } from "../../utils/utils";
 import { ButtonProps } from "./types";
 
 const color = colors;
 
 const ButtonView = styled.TouchableOpacity`
-    //background-color ?: ${color.accent};
+    background-color ?: ${color.accent};
     width: 100%;
     height: 60px;
     padding: 10px;

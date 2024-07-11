@@ -1,5 +1,5 @@
 import styled from "styled-components/native"
-import { colors } from "../../utils/colors"
+import { colors } from "../../utils/utils"
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import { FunctionComponent, useState } from "react"
 import { InputsProps } from "./types"

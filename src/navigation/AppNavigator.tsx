@@ -25,8 +25,8 @@ const AppNavigator = () => {
     const Stack = createStackNavigator<RootStackParamList>();
     return (
         <Stack.Navigator >
-            <Stack.Screen name='Login' component={LoginScreen} />
-            <Stack.Screen name='Signup' component={SignupScreen} />
+            <Stack.Screen name='Login' component={LoginScreen} options={{headerShown:false , }} />
+            <Stack.Screen name='Signup' component={SignupScreen}  options={{headerShown:false , }}/>
             <Stack.Screen name='Draw' component={DrawerNavigator} options={{headerShown:false , }}/>
             <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false , animationEnabled : true }}  />
             <Stack.Screen name="Detail" component={DetailScreen}  options={{headerShown:false , }}  />

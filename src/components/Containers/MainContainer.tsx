@@ -1,6 +1,6 @@
 import { styled } from "styled-components/native";
 import React, { FunctionComponent } from 'react'
-import { colors } from "../../utils/colors";
+import { colors } from "../../utils/utils";
 import { MainContainerProps } from "./types";
 
 

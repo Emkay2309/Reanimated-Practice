@@ -1,7 +1,7 @@
 import {styled} from 'styled-components/native'
 import React,{FunctionComponent} from 'react';
 import {TextProps} from './types'
-import { colors } from '../../utils/colors';
+import { colors } from '../../utils/utils';
 
 const {black} = colors
 
